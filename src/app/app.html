@@ -1,8 +1,9 @@
 <style>
-  .main{
-    height:100vh;
-    width:100vw;
+  .main {
+    height: 100vh;
+    width: 100vw;
   }
+
   .head {
     vertical-align: middle;
     align-content: center;
@@ -14,7 +15,7 @@
     font: italic 2vw "Lobster", sans-serif;
   }
 
-  .bodytext{
+  .bodytext {
     width: 80vw;
     height: 60vh;
     margin-top: 3vh;
@@ -25,7 +26,7 @@
     padding: 20px;
   }
 
-  .translator{
+  .translator {
     width: 1000px;
     height: 4vh;
     margin-top: 3vh;
@@ -33,18 +34,16 @@
     font-family: "Arial", Courier, monospace;
   }
 
-  .buttonHolder{
+  .buttonHolder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:83vw;
+    width: 83vw;
     align-self: center;
     align-items: center;
     align-content: center;
     margin-left: 10vw;
   }
-
-
 </style>
 
 
@@ -52,9 +51,8 @@
   <div class="content">
     <div class="head">Json Translation Tool</div>
     <textarea id="textt" class="bodytext"></textarea>
-    <pre id="idk" class="bodytext"></pre>
     <div class="buttonHolder">
-      <button id = "beauty" class="translator" (click)="onBeauty()">Beautify</button>
+      <button id="beauty" class="translator" (click)="onBeauty()">Beautify</button>
       <button id="compress" class="translator" (click)="onCompress()">Compress</button>
     </div>
   </div>
